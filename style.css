@@ -1,190 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  background-color: var(--default-background-color);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --default-background-color: hsl(30, 38%, 92%);
-    --right-background-color: hsl(0, 0%, 100%);
-    --green-asset-color: hsl(158, 36%, 37%);
-    --default-font-color: #000;
-    --font-one: 'Montserrat', sans-serif;
-    --font-two: 'Fraunces', sans-serif;
-    --hover-color: #1b3f31;
-    --grey-font-color: hsl(228, 12%, 48%);
-}
-
-.container {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-rows: 10fr auto;
-    place-items: center;
-    background-color: var(--default-background-color);
+  --default-background-color: hsl(30, 38%, 92%);
+  --right-background-color: hsl(0, 0%, 100%);
+  --green-asset-color: hsl(158, 36%, 37%);
+  --default-font-color: #000;
+  --font-one: "Montserrat", sans-serif;
+  --font-two: "Fraunces", sans-serif;
+  --hover-color: #1b3f31;
+  --grey-font-color: hsl(228, 12%, 48%);
 }
 
 .attribution {
-     font-family: var(--font-one);
+  font-family: var(--font-one);
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 60vh;
-    width: 50vw;
-    border-radius: 12px;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 34.375rem;
+  width: 43.75rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
 }
 
 .left {
-    grid-column: 1 / 1;
-    display: flex;
+  grid-column: 1 / 1;
+  display: flex;
 }
 
 .left img {
-    width: 25vw;
-    height: 60vh;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .right {
-    grid-column: 2 / 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--right-background-color);
-    padding: 10%;
+  grid-column: 2 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--right-background-color);
+  padding: 2rem;
 }
 
 h1 {
-    font-size: 14px;
-    font-family: var(--font-one);
-    font-weight: 500;
-    margin: 0;
-    letter-spacing: 4px; 
-    color: var(--grey-font-color);
+  font-size: 1rem;
+  font-family: var(--font-one);
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  color: var(--grey-font-color);
 }
 
 h2 {
-    font-size: 34px;
-    font-family: var(--font-two);
-    margin: 0; 
-    font-weight: 700;
-    width: 16vw;
-    line-height: 1;
+  font-size: 2.5rem;
+  font-family: var(--font-two);
+  font-weight: 700;
+  line-height: 1;
 }
 
-.right a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    height: 6vh;
-    width: 22vw;
-    background-color: var(--green-asset-color);
-    color: white;
-    font-size: 14px;
-    border-radius: 8px;
-    font-family: var(--font-one);
-    font-weight: 500;
+.right a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 3.75rem;
+  width: 18rem;
+  background-color: var(--green-asset-color);
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 0.625rem;
+  font-family: var(--font-one);
+  font-weight: 500;
 }
 
-.right a:hover{
-    cursor: pointer;
-    background-color: var(--hover-color);
+.right a:hover {
+  cursor: pointer;
+  background-color: var(--hover-color);
 }
 
 .a-div {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.a-div svg{
-    margin-right: 4%;
+.a-div a svg {
+  height: 1.2rem;
+  margin-right: 4%;
 }
 
 p {
-    font-size: 14px;
-    font-family: var(--font-one);
-    font-weight: 500;
-    margin: 0;
-    width: 16vw;
-    line-height: 1.5;
-    color: var(--grey-font-color);
+  font-size: 0.875rem;
+  font-family: var(--font-one);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.5;
+  color: var(--grey-font-color);
 }
 
 .h3-div {
-    display: flex;
+  display: flex;
 }
 
 h3 {
-    font-size: 36px;
-    color: var(--green-asset-color);
-    font-family: var(--font-two);
-    margin: 1%;
+  font-size: 2rem;
+  color: var(--green-asset-color);
+  font-family: var(--font-two);
 }
 
 .h3-div span {
-    text-decoration: line-through;
-    font-size: 14px;
-    color: var(--default-font-color);
-    margin-top: 4%;
-    margin-left: 4%;
-    font-family: var(--font-two);
-    font-weight: 500;
-    color: var(--grey-font-color);
+  text-decoration: line-through;
+  font-size: 1rem;
+  color: var(--default-font-color);
+  font-family: var(--font-two);
+  font-weight: 500;
+  color: var(--grey-font-color);
+  margin-left: 1rem;
+  margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 375px) {
-    main {
-        height: 90vh;
-        width: 90vw;
-        display: grid;
-        grid-template-rows: 0.8fr 1fr;
-    }
-    .left {
-        grid-row: 1 / 1;
-        grid-column: none;
-        background-image: url(./images/image-product-mobile.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 90vw;
-        height: 40vh;
-    }
-    .right {
-        grid-row: 2 / 2;
-        grid-column: none;
-        padding: 6%;
-    }
-    .left img{
-        display: none;
-    }
-    h2 {
-        font-size: 32px;
-        margin: 0;
-        width: 75vw;
-    }
-    h3 {
-        margin: 0;
-    }
-    p {
-        margin: 0;
-    }
-    h1 {
-        font-size: 12px;
-        margin: 0;
-    }
-    .right a{
-        height: 7vh;
-        width: 80vw;
-    }
-    p {
-        line-height: 1.5;
-        width: 75vw;
-    }
+@media screen and (width < 40rem) {
+  main {
+    height: 90vh;
+    width: 90vw;
+    display: grid;
+    grid-template-rows: 0.8fr 1fr;
+  }
+  .left {
+    grid-row: 1 / 1;
+    grid-column: none;
+    background-image: url(./images/image-product-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 90vw;
+    height: 40vh;
+  }
+  .right {
+    grid-row: 2 / 2;
+    grid-column: none;
+    padding: 6%;
+  }
+  .left img {
+    display: none;
+  }
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+    width: 75vw;
+  }
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  h1 {
+    font-size: 0.75rem;
+    margin: 0;
+  }
+  .right a {
+    height: 3rem;
+    width: 80vw;
+  }
+  p {
+    line-height: 1.5;
+    width: 75vw;
+  }
+  .a-div a svg {
+    height: 1rem;
+  }
 }
