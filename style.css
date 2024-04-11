@@ -32,11 +32,17 @@ body {
   font-family: var(--font-one);
 }
 
+.attribution a {
+  color: var(--green-asset-color);
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 34.375rem;
-  width: 43.75rem;
+  width: 70vw;
+  max-width: 43.75rem;
+  min-width: 6.25rem;
   border-radius: 0.75rem;
   overflow: hidden;
 }
@@ -136,7 +142,7 @@ h3 {
   margin-top: 0.5rem;
 }
 
-@media screen and (width < 40rem) {
+@media screen and (width <= 35rem) {
   main {
     height: 90vh;
     width: 90vw;
